@@ -1,0 +1,62 @@
+/*banner*/
+.banner{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(250, 103, 203); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+
+}
+.carrusel {
+    width: 100%; 
+    overflow: hidden;
+    margin: 50px auto 0;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 400%; /* Tres veces el 100% para tres imágenes */
+    animation: slide 15s infinite; /* Ajusta el tiempo según tus necesidades */
+}
+
+.carrusel li {
+    width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img {
+    max-width: 100%;    /*la imagen nunca va a ser mas grande q el contenedor*/
+    height: auto;   /*la altura se ajusta automaticamente*/
+    display: block; /*asegura que la imagen no tenga un margen exta*/
+    margin: 0 auto; /*centrar la imagen de manera horizontal*/
+}
+
+.texto {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 250px;
+    top: 250px;
+    color: aliceblue;
+}
+
+@keyframes slide {
+    0%, 20% {
+        margin-left: 0;
+    }
+    25%, 45% {
+        margin-left: -100%;
+    }
+    50%, 70% {
+        margin-left: -200%;
+    }
+    75%, 100% {
+        margin-left: -300%;
+    }
+}
