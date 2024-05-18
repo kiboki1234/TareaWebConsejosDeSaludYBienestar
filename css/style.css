@@ -13,20 +13,6 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
-/*estilo para header*/
-
-/*llamar menu*/
-.menu{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    margin:1em;
-}
-
 /*poner color y tipo de letra*/
 .menu a{
     font-size: 16px;
@@ -34,20 +20,6 @@ body{
     text-decoration: none; /*eliminar el subrayado predeterminado*/
 
 }
-/*pseudo clase :hover*/
-
-/*a:hover{
-    color:red;
-}*/
-
-.menu:hover{
-    background-color: beige;
-    /*color: rgb(35, 35, 35);*/
-    transition: 0.5s;
-}
-
-
-
 
 /*article*/
 
