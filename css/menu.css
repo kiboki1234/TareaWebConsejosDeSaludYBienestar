@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 6em;
+    background-color: rgba(250, 184, 103, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 80%; 
+
+}
+
+/* Titulo Logo*/
+.tituloLogo {
+    margin-left: 0.5em;
+    flex-grow: 1;
+}
+
+/* Navigation menu */
+.nav {
+    position: relative;
+    flex-grow: 2;
+}
+
+.barnav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barnav .menu {
+    margin: 0;
+}
+
+.barnav .menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em 1em;
+    display: block;
+    line-height: 3em; /* Make this equal to the height of the header */
+    
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .barnav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(250, 184, 103, 0.9);
+        position: absolute;
+        top: 6em;
+        left: 0;
+        z-index: 999;
+        padding: 1em 0;
+    }
+
+    .barnav .menu {
+        margin: 0.5em 0;
+        text-align: center;
+    }
+
+    #toggle-menu:checked + .hamburger-menu + .nav .barnav {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
