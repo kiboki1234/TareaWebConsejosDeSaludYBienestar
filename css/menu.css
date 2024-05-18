@@ -43,7 +43,15 @@ body {
     margin: 0;
     justify-content: space-around;
     align-items: center;
+   
 }
+
+.menu:hover{
+    background-color: beige;
+    /*color: rgb(35, 35, 35);*/
+    transition: 0.5s;
+}
+
 
 .barnav .menu {
     margin: 0;
@@ -55,7 +63,6 @@ body {
     padding: 0.5em 1em;
     display: block;
     line-height: 3em; /* Make this equal to the height of the header */
-    
 }
 
 /* Hamburger menu */
