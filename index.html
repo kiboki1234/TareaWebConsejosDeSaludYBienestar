@@ -6,18 +6,18 @@
     <title>Maquetación</title>
     <!--enlazar al css-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/carrusel.css"
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/menu.css">
+
 </head>
 <body>
     <!-- Estructura del body/ cabecera-->
-    <header class="header"> 
-        <!--logo-->
+    <header class="header">
         <img src="assets/imgs/logo.png" title="Salud y Bienestar" class="logo">
         <h1 class="tituloLogo">Salud Y Bienestar</h1>
-
-        <!--Menu-->
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="hamburger-menu">&#9776;</label>
         <nav class="nav">
-            <!--barra de navegacion-->
             <ul class="barnav">
                 <li class="menu"><a href="lagunaQuilotoa.html">Laguna del Quilotoa</a></li>
                 <li class="menu"><a href="columnastangan.html">Columnas de Tangan</a></li>
@@ -147,8 +147,34 @@
 
     <!--footer-->
     <section class="footer">
-        <p class="text-footer">Pie de pagina</p>
-    </section>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nosotros</h2>
+                <p>En Salud y Bienestar, nos dedicamos a proporcionarte los mejores consejos y recursos para mantener un estilo de vida saludable. Nuestro equipo de expertos trabaja incansablemente para ofrecerte contenido actualizado y relevante para mejorar tu bienestar físico y mental.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="consejos.html">Consejos de Salud</a></li>
+                    <li><a href="recetas.html">Recetas Saludables</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contáctanos</h2>
+                <form>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Salud y Bienestar. Todos los derechos reservados.</p>
+        </div>
+    </section
 
 </body>
 
