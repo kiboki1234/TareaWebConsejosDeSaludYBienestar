@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilo para header*/
+.header{
+    width: 100%;
+    height: 4em;
+    background-color: #c1d0d0;
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+    align-items: center;
+}
