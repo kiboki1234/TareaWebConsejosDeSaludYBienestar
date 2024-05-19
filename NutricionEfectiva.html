@@ -6,14 +6,31 @@
     <title>Nutricion Efectiva</title>
     <!--Link con CSS para darle Diseño a la pagina-->
     <link rel="stylesheet" href="css/NutricionEfectiva.css">
+    
+    
 </head>
 <body>
-    <!--Encabezado de la pagina web-->
-    <header class="header"> 
+    <div>
+        <!--Encabezado de la pagina web-->
+    <header class="headerPage"> 
         <!--Logo de la empresa-->
-        <img src="/assets/imgs/logo.png" alt="Logo de la empresa" class="logo">
+        <img src="/assets/imgs/logo.png" alt="Logo de la empresa" class="logoPage">
         <!--Texto del Header-->
         <h1 class="titleHeader">Salud y Bienestar</h1>
+    </div>
+    
+        <div>
+            <nav class="mainMenu">
+                <ul class="menuNav">
+                    <li class="menuOption"><a href="lagunaQuilotoa.html">Laguna del Quilotoa</a></li>
+                    <li class="menuOption"><a href="columnastangan.html">Columnas de Tangan</a></li>
+                    <li class="menuOption"><a href="#">Cañon de Toachi</a></li>
+                    <li class="menuOption"><a href="#">Churo de Amanta</a></li>
+                    <li class="menuOption"><a href="#">Los Ilinizas</a></li>
+                </ul>
+               </nav>
+        </div>
+      
     </header>
     <!--Manejo de contenido-->
     <section class="content">
@@ -61,12 +78,12 @@
         <!--Manejo de Menu-->
       <nav class="pageMenu">
         <!--Menu de pagina-->
-        <ul class="barnav">
+        <ul class="barnavPage">
             <h3>RECETAS</h3>
-            <li class="menu"><a href="#">Veganas</a></li>
-            <li class="menu"><a href="#">Ensaladas</a></li>
-            <li class="menu"><a href="#">Carnes</a></li>
-            <li class="menu"><a href="#">Cenas</a></li>
+            <li class="menuPage"><a href="#">Veganas</a></li>
+            <li class="menuPage"><a href="#">Ensaladas</a></li>
+            <li class="menuPage"><a href="#">Carnes</a></li>
+            <li class="menuPage"><a href="#">Cenas</a></li>
         </ul>
 
 
@@ -75,8 +92,35 @@
 
         
     </section>
+    <!--footer-->
     <section class="footer">
-
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nosotros</h2>
+                <p>En Salud y Bienestar, nos dedicamos a proporcionarte los mejores consejos y recursos para mantener un estilo de vida saludable. Nuestro equipo de expertos trabaja incansablemente para ofrecerte contenido actualizado y relevante para mejorar tu bienestar físico y mental.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="consejos.html">Consejos de Salud</a></li>
+                    <li><a href="recetas.html">Recetas Saludables</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contáctanos</h2>
+                <form>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Salud y Bienestar. Todos los derechos reservados.</p>
+        </div>
     </section>
 
 </body>
