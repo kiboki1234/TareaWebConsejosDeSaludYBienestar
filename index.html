@@ -8,29 +8,42 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carrusel.css">
     <link rel="stylesheet" href="css/menu.css">
-
+    <link rel="stylesheet" href="css/articulos.css">
+    <style>
+        /* CSS adicional para mantener el tamaño y las proporciones del logo */
+        .header .logo-link {
+            display: inline-block;
+        }
+        .header .logo {
+            width: auto;
+            height: 100px; /* Ajusta la altura según sea necesario */
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
     <!-- Estructura del body/ cabecera-->
     <header class="header">
-        <img src="assets/imgs/logo.png" title="Salud y Bienestar" class="logo">
+        <a href="#carrusel" class="logo-link">
+            <img src="assets/imgs/logo.png" title="Salud y Bienestar" class="logo">
+        </a>
         <h1 class="tituloLogo">Salud Y Bienestar</h1>
         <input type="checkbox" id="toggle-menu">
         <label for="toggle-menu" class="hamburger-menu">&#9776;</label>
         <!--Menu-->
         <nav class="nav">
             <ul class="barnav">
-                <li class="menu"><a href="#">Nutrición Efectiva</a></li>
-                <li class="menu"><a href="#">Deporte Recreativo</a></li>
-                <li class="menu"><a href="#">Prevencion Medica</a></li>
-                <li class="menu"><a href="#">Salud Mental</a></li>
-                <li class="menu"><a href="#">Opciones</a></li>
+                <li class="menu"><a href="#nutricion-efectiva">Nutrición Efectiva</a></li>
+                <li class="menu"><a href="#deporte-recreativo">Deporte Recreativo</a></li>
+                <li class="menu"><a href="#prevencion-medica">Prevención Médica</a></li>
+                <li class="menu"><a href="#salud-mental">Salud Mental</a></li>
+                <li class="menu"><a href="#footer">Opciones</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Banner/portada-->
-    <section class="banner">
+    <section class="banner" id="carrusel">
         <div class="carrusel">
             <ul>
                 <li>
@@ -40,6 +53,7 @@
                         <p>
                             Darse el tiempo para inhalar y exhalar en un momento de paz y calma, 5 minutos en el día es más que suficiente.
                         </p>
+<<<<<<< HEAD
                         <p>
                             aprovechar ese momento para practicar la gratitud, reflexionar y reconocer el poder de estar vivos y sanos,
                         </p>
@@ -47,6 +61,8 @@
                             nos ayudara a llevar de una mejor manera la angustia.
                         </p>
                         
+=======
+>>>>>>> ec1dcbd1db98a6d4dea7bde3886b5f006f83496a
                     </div>
                 </li>
                 <li>
@@ -59,8 +75,6 @@
                         <p>
                             reducir los factores de riesgo, detener su avance y atenuar sus consecuencias
                         </p>
-
-
                     </div>
                 </li>
                 <li>
@@ -87,13 +101,11 @@
                         </p>
                     </div>
                 </li>
-                
             </ul>
-            
         </div>
-        
     </section>
 
+<<<<<<< HEAD
 
     <!--Articel-->
     <section class="article">
@@ -117,47 +129,42 @@
                 </div>
 
                 <a href="#" class="btn-img">BOTON</a>
+=======
+    <!-- Artículos -->
+    <section class="articles" id="nutricion-efectiva">
+        <div class="article">
+            <h2>NUTRICIÓN EFECTIVA</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore eius sapiente consequuntur, aliquid corrupti ducimus consequatur numquam officia fugiat minima iure in expedita facere mollitia sed ullam dignissimos aspernatur?</p>
+                <img src="assets/imgs/Deporte_R.jpg" alt="Imagen 1">
             </div>
-
-             <!--CAJA 2-->
-             <div class="box-galery">
-                <div class="box-img">
-                    <img src="img/montaña.jpg" alt="Imagen">
-
-                </div>
-
-                <a href="#" class="btn-img">BOTON</a>
-            </div>
-
-             <!--CAJA 3-->
-             <div class="box-galery">
-                <div class="box-img">
-                    <img src="img/monumento.jpeg" alt="Imagen">
-
-                </div>
-
-                <a href="#" class="btn-img">BOTON</a>
-            </div>
-
-             <!--CAJA 4-->
-             <div class="box-galery">
-                <div class="box-img">
-                    <img src="img/sendero.jpg" alt="Imagen">
-
-                </div>
-
-                <a href="#" class="btn-img">BOTON</a>
-            </div>
-
-        
-
         </div>
-
+        <div class="article reverse" id="deporte-recreativo">
+            <h2>DEPORTE RECREATIVO</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore eius sapiente consequuntur, aliquid corrupti ducimus consequatur numquam officia fugiat minima iure in expedita facere mollitia sed ullam dignissimos aspernatur?</p>
+                <img src="assets/imgs/Deporte_R.jpg" alt="Imagen 2">
+            </div>
+        </div>
+        <div class="article" id="prevencion-medica">
+            <h2>PREVENCIÓN MÉDICA</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore eius sapiente consequuntur, aliquid corrupti ducimus consequatur numquam officia fugiat minima iure in expedita facere mollitia sed ullam dignissimos aspernatur?</p>
+                <img src="assets/imgs/Deporte_R.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <div class="article reverse" id="salud-mental">
+            <h2>SALUD MENTAL</h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore eius sapiente consequuntur, aliquid corrupti ducimus consequatur numquam officia fugiat minima iure in expedita facere mollitia sed ullam dignissimos aspernatur?</p>
+                <img src="assets/imgs/Deporte_R.jpg" alt="Imagen 4">
+>>>>>>> ec1dcbd1db98a6d4dea7bde3886b5f006f83496a
+            </div>
+        </div>
     </section>
 
-
-    <!--footer-->
-    <section class="footer">
+    <!-- Footer -->
+    <section class="footer" id="footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <h2>Sobre Nosotros</h2>
@@ -186,8 +193,5 @@
             <p>&copy; 2024 Salud y Bienestar. Todos los derechos reservados.</p>
         </div>
     </section>
-
 </body>
-
-
 </html>
