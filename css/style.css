@@ -7,26 +7,12 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(212, 183, 236);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-/*estilo para header*/
-
-/*llamar menu*/
-.menu{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    margin:1em;
-}
-
 /*poner color y tipo de letra*/
 .menu a{
     font-size: 16px;
@@ -34,32 +20,7 @@ body{
     text-decoration: none; /*eliminar el subrayado predeterminado*/
 
 }
-/*pseudo clase :hover*/
 
-/*a:hover{
-    color:red;
-}*/
-
-.menu:hover{
-    background-color: beige;
-    /*color: rgb(35, 35, 35);*/
-    transition: 0.5s;
-}
-
-
-
-
-/*article*/
-
-.article{
-    width: 80%;
-    height: 100vh;
-    background-color: rgb(172, 216, 238); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
 
 .galery{
     width: 80%;
@@ -146,7 +107,7 @@ background-color: blueviolet;
 /*footer*/
 
 .footer {
-    background-color: #f8f8f8;
+    background-color: #eae191;
     color: #333;
     padding: 20px 0;
     font-family: Arial, sans-serif;

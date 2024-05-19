@@ -1,3 +1,4 @@
+/* General styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,11 +21,10 @@ body {
 
 /* Logo */
 .logo {
-    height: 80%; 
-
+    height: 10%; 
 }
 
-/* Titulo Logo*/
+/* Titulo Logo */
 .tituloLogo {
     margin-left: 0.5em;
     flex-grow: 1;
@@ -43,19 +43,26 @@ body {
     margin: 0;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 
 .barnav .menu {
     margin: 0;
+    height: 100%;
 }
 
 .barnav .menu a {
     text-decoration: none;
     color: #333;
     padding: 0.5em 1em;
-    display: block;
-    line-height: 3em; /* Make this equal to the height of the header */
-    
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+
+.barnav .menu a:hover {
+    background-color: rgba(225, 136, 28, 0.9);
 }
 
 /* Hamburger menu */
@@ -70,18 +77,27 @@ body {
     .barnav {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background-color: rgba(250, 184, 103, 0.9);
+        width: 200px; /* Fijo ancho del menú desplegable */
         position: absolute;
         top: 6em;
-        left: 0;
+        right: 0;
         z-index: 999;
-        padding: 1em 0;
+        background-color: rgba(250, 184, 103, 0.9);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     }
 
     .barnav .menu {
-        margin: 0.5em 0;
-        text-align: center;
+        width: 100%; /* Ancho completo para cada elemento del menú */
+        margin: 0;
+        padding: 1em 0; /* Espaciado entre elementos */
+        text-align: left; /* Alineación del texto */
+    }
+
+    .barnav .menu a {
+        width: 100%; /* Ancho completo para cada enlace */
+        padding: 1em; /* Espaciado interno */
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+        background-color: rgba(250, 184, 103, 0.8);
     }
 
     #toggle-menu:checked + .hamburger-menu + .nav .barnav {
@@ -91,4 +107,5 @@ body {
     .hamburger-menu {
         display: block;
     }
+
 }
