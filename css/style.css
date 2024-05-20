@@ -13,6 +13,16 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
+
+ /* CSS adicional para mantener el tamaño y las proporciones del logo */
+ .header .logo-link {
+    display: inline-block;
+}
+.header .logo {
+    width: auto;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    vertical-align: middle;
+}
 /*poner color y tipo de letra*/
 .menu a{
     font-size: 16px;
