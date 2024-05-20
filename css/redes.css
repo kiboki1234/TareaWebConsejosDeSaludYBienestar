@@ -1,0 +1,38 @@
+/* Barra lateral de redes sociales flotante */
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: -60px; /* Ocultar la barra fuera de la vista */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #006400; /* Color de fondo de la barra */
+    border-radius: 0 8px 8px 0;
+    padding: 0.5em 0;
+    transition: left 0.3s ease; /* Suavizar la transición de aparición */
+    z-index: 1000; /* Para asegurarte que esté encima de otros elementos */
+}
+
+.social-sidebar:hover {
+    left: 0; /* Mostrar la barra al pasar el ratón */
+}
+
+.social-icon {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin: 0.2em 0;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Agrandar icono al pasar el ratón */
+    background-color: #87CEEB; /* Cambiar color de fondo al pasar el ratón */
+}
+
+.social-icon.facebook:hover { background-color: #3b5998; }
+.social-icon.x:hover { background-color: black; }
+.social-icon.instagram:hover { background-color: #e1306c; }
+.social-icon.linkedin:hover { background-color: #0077b5; }
