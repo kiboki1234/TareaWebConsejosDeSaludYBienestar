@@ -2,19 +2,36 @@
     display: flex;
     flex-direction: column;
     gap: 2em; /* Espacio entre artículos */
+    padding: 2em; /* Añadir padding para separación */
+    background-color: #f5f5f5; /* Fondo neutro */
 }
 
 .article {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    padding: 1.5em;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.article:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta al pasar el ratón */
+}
+
+.article h2 {
+    color: #006400; /* Verde oscuro */
+    margin: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #87CEEB; /* Línea inferior azul claro */
 }
 
 .content {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 1em;
 }
 
 .article.reverse .content {
@@ -22,26 +39,21 @@
 }
 
 .content img {
-    max-width: 80; /* Ajusta según tus necesidades */
+    max-width: 200px; /* Ajusta según tus necesidades */
     height: auto;
+    margin-right: 1em;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
 }
 
 .content p {
     flex: 1;
-    
-}
-
-h2 {
-    
-    margin-top: 2em;
-}
-.article.reverse {
-    flex-direction: row-reverse;
+    color: #2F4F4F; /* Azul oscuro */
+    margin: 0;
 }
 
 .article.reverse img {
-    margin-left: 0;
-    margin-right: 1em;
+    margin-left: 1em;
+    margin-right: 0;
 }
 
 /* Responsive styles */
@@ -51,13 +63,13 @@ h2 {
         text-align: center;
     }
 
-    .article img, .article.reverse img {
-        width: 100%;
-        margin: 0 0 1em 0;
+    .content {
+        flex-direction: column;
     }
 
-    .article p, .article.reverse p {
+    .content img {
         width: 100%;
-        padding: 0;
+        max-width: 100%;
+        margin: 0 0 1em 0;
     }
 }

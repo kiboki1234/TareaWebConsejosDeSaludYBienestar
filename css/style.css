@@ -20,92 +20,7 @@ body{
     text-decoration: none; /*eliminar el subrayado predeterminado*/
 
 }
-
-
-.galery{
-    width: 80%;
-    height: 50%;
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.title-article{
-    font-size: 2em;
-    color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-}
-
-.paragraph-article{
-    font-size: 1.25em;
-    width: 80%;
-    text-align: justify;
-    margin: 1em;
-
-
-}
-
-.box-galery{
-
-    width: 24%;
-    height: 100%;
-    background-color: rgb(191, 250, 142);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-
-}
-
-.box-img{
-
-    width: 100%;
-    height: 60%;
-    background-color: rgb(251, 193, 105);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-.btn-img{
-    
-    background-color: brown;
-    text-decoration: none;
-    padding: 0.5em 3em;
-    color: aliceblue;
-    font-size: 1.25em;
-    margin: 1em;
-    border-radius: 0.5em;
-}
-.btn-img a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    size: 10em;
-}
-.btn-img:hover{
-background-color: blueviolet;
-}
-
-.box-img img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
 /*footer*/
-
 .footer {
     background-color: #eae191;
     color: #333;
@@ -119,46 +34,37 @@ background-color: blueviolet;
     flex-wrap: wrap;
     padding: 20px;
 }
-
 .footer-section {
     flex: 1;
     margin: 20px;
     min-width: 250px;
 }
-
 .footer-section h2 {
     color: #007BFF;
 }
-
 .footer-section p, .footer-section ul, .footer-section form {
     margin-top: 10px;
 }
-
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-section ul li {
     margin-bottom: 10px;
 }
-
 .footer-section ul li a {
     text-decoration: none;
     color: #333;
 }
-
 .footer-section ul li a:hover {
     color: #007BFF;
 }
-
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
 }
-
 .contact-form button {
     background-color: #007BFF;
     color: #fff;
@@ -166,7 +72,6 @@ background-color: blueviolet;
     padding: 10px 20px;
     cursor: pointer;
 }
-
 .contact-form button:hover {
     background-color: #0056b3;
 }
@@ -178,19 +83,3 @@ background-color: blueviolet;
     border-top: 1px solid #ccc;
 }
 
-/*Parte 2*/
-/*imagen sea responsive*/
-
-.imagen-responsive{
-    max-width: 100%;    /*la imagen nunca va a ser mas grande q el contenedor*/
-    height: auto;   /*la altura se ajusta automaticamente*/
-    display: block; /*asegura que la imagen no tenga un margen exta*/
-    margin: 0 auto; /*centrar la imagen de manera horizontal*/
-
-}
-
-.texto{
-    height: auto;   /*la altura se ajusta automaticamente*/
-    display: block; /*asegura que la imagen no tenga un margen exta*/
-    margin: 0 auto;
-}
