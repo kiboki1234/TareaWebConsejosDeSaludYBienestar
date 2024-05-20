@@ -62,7 +62,7 @@ body {
 }
 
 .barnav .menu a:hover {
-    background-color: rgba(225, 136, 28, 0.9);
+    background-color: rgb(0, 123, 255,0.9);
 }
 
 /* Hamburger menu */
@@ -82,7 +82,7 @@ body {
         top: 6em;
         right: 0;
         z-index: 999;
-        background-color: rgba(250, 184, 103, 0.9);
+        background-color: rgb(135, 206, 235,0.9);
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     }
 
@@ -97,7 +97,7 @@ body {
         width: 100%; /* Ancho completo para cada enlace */
         padding: 1em; /* Espaciado interno */
         box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-        background-color: rgba(250, 184, 103, 0.8);
+        background-color: rgb(135, 206, 235,0.8);
     }
 
     #toggle-menu:checked + .hamburger-menu + .nav .barnav {

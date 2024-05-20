@@ -56,6 +56,24 @@
     margin-right: 0;
 }
 
+.verMas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btn-verMas{
+    width: 10%;
+    height: 40px;
+    border-radius: 2em;
+    background-color: #0056b3;
+    color: white;
+}
+.btn-verMas:hover{
+    background-color: #004a9a;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .article, .article.reverse {
@@ -72,4 +90,12 @@
         max-width: 100%;
         margin: 0 0 1em 0;
     }
+    .btn-verMas{
+        width: 20%;
+        height: 40px;
+        border-radius: 2em;
+
+    }
+
+
 }
