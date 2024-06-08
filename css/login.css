@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #839ec7;
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    border: 1px solid #ccc;
+    width: 400px;
+    height: auto;    
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    padding: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 28px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+    padding: 0;
+    align-items: left;
+}
+
+.forgot-password {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+    text-decoration: none;
+}
+
+button {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:0.3s;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-button {
+    background: rgb(45, 126, 231);
+}
+
+.login-button:hover {
+    background: rgb(35, 106, 201);
+}
+
+.register-button {
+    background: rgb(34, 193, 195);
+}
+
+.register-button:hover {
+    background: rgb(30, 167, 169);
+}
+
+.alternative-login {
+    text-align: center;
+}
+
+.alternative-login p {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-button {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:  0.3s;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google {
+    background: rgb(234, 67, 53);
+}
+
+.google:hover {
+    background: rgb(219, 50, 41);
+}
+
+.facebook {
+    background: rgb(66, 103, 178);
+}
+
+.facebook:hover {
+    background: rgb(55, 89, 152);
+}
+.twitter{
+    background-color: skyblue;
+}
+.twitter:hover{
+     background-color: skyblue;
+}
+.social-button i {
+    font-size: 20px;
+}

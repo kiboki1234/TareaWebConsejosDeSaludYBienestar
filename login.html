@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Enlace a la hoja de estilos de Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+        // Función que maneja el evento de envío del formulario de login
+        function handleLogin(event) {
+            // Previene el comportamiento por defecto del formulario (enviar y recargar la página)
+            event.preventDefault();
+            // Obtiene el valor del campo de texto 'username'
+            const username = document.getElementById('username').value;
+            // Obtiene el valor del campo de contraseña 'password'
+            const password = document.getElementById('password').value;
+            // Almacena el nombre de usuario en el almacenamiento local del navegador
+            localStorage.setItem('username', username);
+            // Almacena la contraseña en el almacenamiento local del navegador
+            localStorage.setItem('password', password);
+            // Redirige al usuario a la página principal 'main.html'
+            window.location.href = 'main.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="login">
+        <!-- Formulario de login con un evento onsubmit que llama a handleLogin -->
+        <form onsubmit="handleLogin(event)">
+            <h1>LOGIN</h1>
+            <!-- Campo de texto para el nombre de usuario -->
+            <label for="username">Usuario</label>
+            <input type="text" id="username" placeholder="Ingrese su usuario">
+            <!-- Campo de texto para la contraseña -->
+            <label for="password">Contraseña</label>
+            <!-- Type password, oculta -->
+            <input type="password" id="password" placeholder="Ingrese su contraseña">
+            <div class="remember-forgot">
+                <div class="remember">
+                    <!-- Checkbox para recordar la contraseña -->
+                    <input type="checkbox" id="remember">
+                    <label for="remember" class="checkbox-label">Recordar Usuario</label>
+                </div>
+                <!-- Enlace para recuperar la contraseña olvidada -->
+                <a href="#" class="forgot-password">¿Olvidó su Contraseña?</a>
+            </div>
+            <!-- Botón para iniciar sesión -->
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+            <!-- Botón para registrarse -->
+            <button type="button" class="register-button">Registrarse</button>
+            <p>Otros métodos para hacer login</p>
+            <!-- Botón para iniciar sesión con Google -->
+            <button type="button" class="social-button google"><i class="fab fa-google"></i> Google</button>
+            <!-- Botón para iniciar sesión con Facebook -->
+            <button type="button" class="social-button facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+            <!-- Botón para iniciar sesión con Twitter -->
+            <button type="button" class="social-button twitter"><i class="fab fa-twitter"></i> Twitter "X"</button>
+        </form>
+    </div>
+</body>
+</html>
