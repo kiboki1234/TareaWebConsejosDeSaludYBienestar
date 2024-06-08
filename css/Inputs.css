@@ -1,0 +1,57 @@
+.form-group {
+    position: relative;
+    margin: 12px 0;
+    padding: 5px;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #eee;
+}
+
+.form-group input::placeholder {
+    color: transparent;
+}
+
+.form-group .form-label {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.form-group input:focus + .form-label, .form-group input:not(:placeholder-shown) + .form-label {
+    transform: translate(5px, -22px);
+    background-color: #34495e;
+    font-size: 14px;
+    color: #eee;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #acacac;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: #fff;
+}
