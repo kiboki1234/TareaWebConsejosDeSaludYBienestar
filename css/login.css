@@ -60,6 +60,12 @@ h1 {
     position: relative;
     width: 100%;
 }
+.terminos{
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    color: white;
+}
 
 .form-group input,
 .form-group select {
