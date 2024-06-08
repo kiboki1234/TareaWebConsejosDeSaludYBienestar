@@ -7,32 +7,36 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Evita el desbordamiento en el cuerpo */
 }
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding: 20px;
 }
 
 .form-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 90vh; /* Ajusta la altura máxima del contenedor del formulario */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
 
 .form {
     width: 100%;
-    padding: 20px;
-    background-color: #34495e;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: opacity 0.5s ease-in-out, visibility 0.5s;
     opacity: 0;
@@ -51,59 +55,95 @@ h1 {
     margin-bottom: 20px;
 }
 
-.options {
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: wite;
+    color: #ecf0f1;
+    padding: 0 5px;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.form-group .toggle-password.fa-eye-slash {
+    color: #2980b9;
+}
+
+.form-grid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0; /* Ajusta el margen vertical para dar más espacio */
-    color: #ecf0f1;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.options label, .options a {
-    margin-right: 20px; /* Ajusta el margen entre los elementos */
-}
-.remember-me input {
-    margin-right: 5px;
+.form-grid .form-group {
+    flex: 1 1 calc(50% - 15px);
 }
 
-.forgot-password {
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.form-grid .form-group.full-width {
+    flex: 1 1 100%;
 }
 
-.forgot-password:hover {
-    color: #3498db;
-}
-
-.login-btn, .register-btn {
+.login-btn, .register-btn, .toggle-btn {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     font-size: 18px;
     color: #ecf0f1;
-    background-color: #2980b9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.login-btn:hover, .register-btn:hover {
+.login-btn {
+    background-color: #2980b9;
+}
+
+.login-btn:hover {
+    background-color: #3498db;
+}
+
+.register-btn {
+    background-color: #2980b9;
+}
+
+.register-btn:hover {
     background-color: #3498db;
 }
 
 .toggle-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 18px;
-    color: #ecf0f1;
     background-color: #27ae60;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .toggle-btn:hover {
