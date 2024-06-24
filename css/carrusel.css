@@ -64,3 +64,7 @@
         margin-left: -300%;
     }
 }
+
+.image:hover{
+    opacity: 0.5;
+}

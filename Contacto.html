@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <img src="assets/imgs/logo.png" title="Salud y Bienestar" class="logo">
+        </a>
+        <h1 class="tituloLogo">Salud Y Bienestar</h1>
+        <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="hamburger-menu">&#9776;</label>
+            <!--Menu-->
+            <nav class="nav">
+                <ul class="barnav">
+                    <li class="menu"><a href="NutricionEfectiva.html">Nutrición Efectiva</a></li>
+                    <li class="menu dropdown">
+                        <a href="DeporteRecreativo.html">Deporte Recreativo</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Deporte de Impactos</a></li>
+                            <li><a href="#">Deporte de Contacto</a></li>
+                            <li><a href="#">Deporte en Equipo</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="PrevencionMedica.html">Prevención Médica</a></li>
+                    <li class="menu"><a href="SaludMental.html">Salud Mental</a></li>
+                    <li class="menu"><a href="login.html">Log In</a></li>
+                    <li class="menu"><a href="#footer">Opciones</a></li>
+                </ul>
+            </nav>
+        </header>
+    <section class="banner" id="carrusel">
+        <div class="carrusel">
+            <ul>
+                <li>
+                    <img src="assets/imgs/salud_M.jpg" class="image">
+                    <div class="texto">
+                        <h2>Tu Salud Mental es importante para nosotros</h2>
+                        <p>
+                            Darse el tiempo para inhalar y exhalar en un momento de paz y calma, 5 minutos en el día es más que suficiente.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/imgs/prevencion_M.jpg" class="image" >
+                    <div class="texto">
+                        <h2>Prevenir a tiempo puede salvar tu vida</h2>
+                        <p>
+                            La prevención en salud es clave para prevenir la aparición de enfermedades,
+                        </p>
+                        <p>
+                            reducir los factores de riesgo, detener su avance y atenuar sus consecuencias
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/imgs/Deporte_R.jpg" class="image" >
+                    <div class="texto">
+                        <h2>El deporte nos mueve y nos da vida</h2>
+                        <p>
+                            El deporte, acompañado de unas pautas y unos objetivos concretos,
+                        </p>
+                        <p>
+                            nos ayuda a conseguir metas encaminadas al bienestar, al equilibrio mente–cuerpo.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/imgs/nutricion_E.jpg" class="image" >
+                    <div class="texto">
+                        <h2>Comer sano define tu salud integral</h2>
+                        <p>
+                            En este espacio, queremos compartir contigo contenido que te sea útil
+                        </p>
+                        <p>
+                            relacionado con el mundo de la salud en general y de la nutrición en particular.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contacto">
+        <div class="formularioContacto">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
